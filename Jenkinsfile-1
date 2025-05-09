@@ -17,7 +17,7 @@ pipeline {
                     withSonarQubeEnv('Sq1') {
                         bat """
                             mvnw.cmd clean verify sonar:sonar ^
-                            -Dsonar.projectKey=SonarQube_Project ^
+                            -Dsonar.projectKey=SonarQube-tp ^
                             -Dsonar.host.url=http://localhost:9000
                         """
                     }
